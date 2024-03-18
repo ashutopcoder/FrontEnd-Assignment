@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            background-color: black;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+           
+        }
+        .box{
+            height: 450px;
+            width: 60%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+            gap: 15px;
+            padding: 30px;
+            margin-top: 120px;
+            color: whitesmoke;
+
+        }
+        .btn{
+            height: 100px;
+            background-color:rgb(78, 89, 96);
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            font-weight: bolder;
+            font-size: xx-large;
+            padding: 20px;
+            
+            
+        }
+        #A{
+            grid-area: 1/1/2/3;
+        }
+        #B{
+            grid-area: 1/3/2/5;
+        }
+        #C{
+            grid-area: 2/1/3/2;
+        }
+        #D{
+            grid-area: 2/2/3/5;
+        }
+        #E{
+            grid-area: 3/1/4/5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="btn" id="A">A</div>
+            <div class="btn" id="B">B</div>
+            <div class="btn" id="C">C</div>
+            <div class="btn" id="D">D</div>
+            <div class="btn" id="E">E</div>
+        </div>
+
+    </div>
+</body>
+</html>
