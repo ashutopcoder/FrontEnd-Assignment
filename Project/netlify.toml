@@ -1,0 +1,9 @@
+[build]
+  publish = "public"  # Yeh folder ka path hai jahan aapki final built site rakhi jayegi.
+  command = "npm run build"  # Agar aapka project npm ya kisi build tool ka use karta hai, toh yeh command hai.
+
+[[redirects]]
+  from = "/submit"  # Yeh form ke submit hone ke baad ka URL hoga (agar aap isse use kar rahe hain).
+  to = "/thankyou"  # Yeh woh page hoga jahan redirect karna hai.
+  status = 200
+  force = true
